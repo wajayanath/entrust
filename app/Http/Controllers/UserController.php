@@ -11,6 +11,11 @@ use Hash;
 
 class UserController extends Controller
 {
+     public function __construct()
+    {
+        $this->middleware(['permission:role-list|role-create|role-edit|role-delete']);
+    }
+    
     /**
      * Display a listing of the resource.
      *
