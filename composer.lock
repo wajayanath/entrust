@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "11c6dc95e4d0cb6333f7677e922dabdb",
-    "content-hash": "fd57d9eeeafde448293db7ae00fbed43",
+    "hash": "c131b0c97f697f7186fbd44b87a1430a",
+    "content-hash": "702a1fdded84fd43274a5003fd23d5a9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,52 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "hootlex/laravel-moderation",
+            "version": "v1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hootlex/laravel-moderation.git",
+                "reference": "d31121d2c291dcab52c92e36498ebbb029da9b64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hootlex/laravel-moderation/zipball/d31121d2c291dcab52c92e36498ebbb029da9b64",
+                "reference": "d31121d2c291dcab52c92e36498ebbb029da9b64",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "5.*",
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hootlex\\Moderation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Kyriakidis",
+                    "email": "hootlex@icloud.com"
+                }
+            ],
+            "description": "A simple Content Moderation System for Laravel 5.* that allows you to Approve or Reject resources like posts, comments, users, etc.",
+            "keywords": [
+                "content-moderation",
+                "laravel",
+                "moderation",
+                "moderation-system"
+            ],
+            "time": "2016-08-26 11:52:36"
         },
         {
             "name": "jakub-onderka/php-console-color",

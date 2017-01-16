@@ -157,6 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Hootlex\Moderation\ModerationServiceProvider::class,
 
     ],
 
