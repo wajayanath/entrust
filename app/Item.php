@@ -3,8 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Hootlex\Moderation\Moderatable;
 
 class Item extends Model
 {
-    public $fillable = ['title','description'];
+    use Moderatable;
+    public $fillable = ['title','description','moderated_at', 'status'];
+    public static $strictModeration = true;
 }

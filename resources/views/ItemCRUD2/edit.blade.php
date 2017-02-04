@@ -35,6 +35,15 @@
                 {!! Form::textarea('description', null, array('placeholder' => 'Description','class' => 'form-control','style'=>'height:100px')) !!}
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Approval:</strong>
+                <br/>
+                <label>{{ Form::checkbox('item', $item->status, $item->isApproved() ? true:false, array('class' => 'name')) }}
+                {{ $item->status }}</label>
+                <br/>
+               
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
         </div>
